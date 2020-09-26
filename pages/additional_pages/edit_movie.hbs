@@ -1,0 +1,46 @@
+<h2>Edit your review movie and you can delete review</h2>
+
+{{#if error}}
+    <p class="error_alert">{{error}}</p>
+{{/if}}
+
+<form action="/movies/edit"  method="post">
+    <div class="row">
+        <div class="input-field col s6">
+            <input id="title" type="text" class="validate" name='title' value="{{movie.title}}">
+            <label for="title">Movie title</label>
+        </div>
+    </div>
+    <div class="row">   
+        <div class="input-field col s6">
+            <input id="description" type="text" class="validate" name='description' value="{{movie.description}}">
+            <label for="description">Description movie</label>
+        </div>
+    </div>
+    <div class="row">   
+        <div class="input-field col s3">
+            <input id="rating" type="text" class="validate" name='rating' value="{{movie.rating}}">
+            <label for="rating">Rating movie ( 1 to 10 )</label>
+        </div>
+
+        <div class="input-field col s3">
+            <input id="price" type="text" class="validate" name='price' value="{{movie.price}}">
+            <label for="price">Price movie</label>
+        </div>
+    </div>
+    <div class="row">   
+        <div class="input-field col s6">
+            <input id="url" type="text" class="validate" name='img_url' value="{{movie.img_url}}">
+            <label for="url">Image URL</label>
+        </div>
+    </div>
+    <input type="hidden" name="id" value="{{movie._id}}">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+
+    <button class="btn cyan darken-2" type="submit">Edit movies</button>
+</form>
+<form action="/movies/delete" method="post">
+    <input type="hidden" name="id" value="{{movie._id}}">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+    <button class="btn #f44336 red btn-delete">Delete</button>
+</form>

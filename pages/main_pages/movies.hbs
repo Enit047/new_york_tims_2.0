@@ -1,0 +1,39 @@
+<h2>Movies are added users and rated</h2>
+<p class="additional_inf">You can comment them</p>
+
+{{#if movies.length}}
+    <div class="card-list_d">
+        {{#each movies}}
+            <div class="row">
+                <div class="col s7 offset-s3">   
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{img_url}}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title-1">{{title}}</span>
+                            <p class="card-desc-2">{{description}}</p>
+                            <p class="price_name" >Price: <span class="price_itself" >{{price}}</span></p>
+                            <div class="block_rating marg-1 #ff7e15 orange darken-2">
+                                <span class="rating_digits">{{rating}}</span>
+                                <span class="max_rating">10</span>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a href="/movies/{{_id}}">Information about card</a>
+                            
+                            {{#if isUser}}
+                                <a href="/movies/{{_id}}/edit?allow=true" class="edit_card">Edit</a>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        {{/each}}
+    </div>
+{{else}}
+    <div class="empty_movies">
+        <p class="title_empty">List of movies is empty</p>
+        <a class="btn cyan darken-2" href="/add">Add movie</a>
+    </div>
+{{/if}}

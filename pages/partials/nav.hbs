@@ -1,0 +1,35 @@
+<nav>
+    <div class="nav-wrapper padd_3 cyan darken-2">
+      <a href="#" class="brand-logo">MovieSeller</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+          <li class="active"><a href="/">Home</a></li>
+        {{else}}
+          <li><a href="/">Home</a></li>
+        {{/if}}
+
+        {{#if isMovies}}
+          <li class="active"><a href="/movies">Movies</a></li>
+        {{else}}
+          <li><a href="/movies">Movies</a></li>
+        {{/if}}
+
+        {{#if isUser}}
+          {{#if isAdd}}
+            <li class="active"><a href="/add">Add movie</a></li>
+          {{else}}
+            <li><a href="/add">Add movie</a></li>
+          {{/if}}
+
+          <li><a href="/account/signout">Sign out</a></li>
+        {{else}}
+          {{#if isAuth}}
+            <li class="active"><a href="/account">Log in</a></li>
+          {{else}}
+            <li><a href="/account">Log in</a></li>
+          {{/if}}
+        {{/if}}
+
+      </ul>
+    </div>
+  </nav>

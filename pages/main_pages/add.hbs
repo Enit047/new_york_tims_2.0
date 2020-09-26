@@ -1,0 +1,41 @@
+<h2>Add movie: talk about him and rate</h2>
+<p class="additional_inf">And you can see what about that think other</p>
+
+{{#if error}}
+    <p class="error_alert">{{error}}</p>
+{{/if}}
+
+<form action="/add"  method="post">
+    <div class="row">
+        <div class="input-field col s6">
+            <input id="title" type="text" class="validate" name='title' value="{{data.title}}">
+            <label for="title">Movie title</label>
+        </div>
+    </div>
+    <div class="row">   
+        <div class="input-field col s6">
+            <input id="description" type="text" class="validate" name='description' value="{{data.description}}">
+            <label for="description">Description movie</label>
+        </div>
+    </div>
+    <div class="row">   
+        <div class="input-field col s3">
+            <input id="rating" type="text" class="validate" name='rating' value="{{data.rating}}">
+            <label for="rating">Rating movie ( 1 to 10 )</label>
+        </div>
+
+        <div class="input-field col s3">
+            <input id="price" type="text" class="validate" name='price' value="{{data.price}}">
+            <label for="price">Price movie</label>
+        </div>
+    </div>
+    <div class="row">   
+        <div class="input-field col s6">
+            <input id="url" type="text" class="validate" name='img_url' value="{{data.img_url}}">
+            <label for="url">Image URL</label>
+        </div>
+    </div>
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+
+    <button class="btn cyan darken-2">Add movies</button>
+</form>

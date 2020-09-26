@@ -1,0 +1,58 @@
+<div class="row row-inf">
+    <div class="information">
+        <div class="block_img">
+            <img src="{{movie.img_url}}" alt="{{movie.title}}">
+        </div>
+        <div class="block_text">
+            <h2 class="block_text-title">{{movie.title}}</h2>
+            <p class="block_text-desc">{{movie.description}}</p>
+            <p class="price_name">Price: <span class="price_itself">{{movie.price}}</span></p>
+            <div class="block_rating">
+                <span class="rating_digits">{{movie.rating}}</span>
+                <span class="max_rating">10</span>
+            </div>
+        </div>
+    </div>
+
+    {{!-- <div class="col s6 offset-s5 mar-t-3">
+        <a href="/movies" class="btn #ff7e15 orange darken-2">Back to movies</a>
+    </div> --}}
+</div>
+<div class="row">
+    <div class="block_comment">
+        <h3 class="comment_header">Comments</h3>
+        
+        <div class="area-comments">
+            {{#if false}}
+                <div class="comment">
+                    <div class="author">
+                        <div class="avatar">
+
+                        </div>
+                        <div class="name">
+
+                        </div>
+                    </div>
+                    <div class="text_comment">
+                        <p>Shit</p>
+                    </div>
+                </div>
+            {{else}}
+                <div class="comment">
+                    <div class="author">
+                        <div class="avatar">
+
+                        </div>
+                        <div class="name">
+
+                        </div>
+                    </div>
+                    <div class="text_comment">
+                        <p>Shit</p>
+                    </div>
+                </div>
+                {{!-- <p>This review doesnt have comments</p> --}}
+            {{/if}}
+        </div>
+    </div>
+</div>

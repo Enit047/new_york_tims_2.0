@@ -1,0 +1,161 @@
+.padd_3 {
+    padding: 0 3rem;
+}
+.additional_inf {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0;
+    color: #686868;
+}
+.error_alert {
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(247, 171, 190);
+    border-radius: 18px;
+    
+    color: #ee5d5d;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
+}
+.title_empty{
+    font-size: 25px;
+    font-weight: 600;
+    color: #363636;
+}
+.empty_movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-list_d{
+    margin: 70px 0 90px 0;
+}
+.information{
+    display: flex;
+    margin: 40px 0 60px 0;
+}
+.block_img{
+    position: relative;
+    max-width: 40%;
+}
+.block_img img {
+    width: 100%;
+    padding-right: 40px;
+}
+.block_text-desc{
+    font-size: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    margin: 19px 0 5px 0;
+}
+.block_text-title{
+    font-weight: 600;
+}
+
+.price_name {
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+    color: #444444;
+    font-weight: 600;
+}
+.price_itself{
+    font-size: 29px;
+}
+
+
+/* rating block */
+.block_rating {
+    position: relative;
+    width: 100px;
+    height: 35px;
+    background-color: #0097a7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block_rating:after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 47%;
+} 
+
+.rating_digits, .max_rating{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.max_rating{
+    margin-left: 14px;
+}
+.rating_digits{
+    margin-right: 14px;
+}
+.marg-1 {
+    margin-top: 1rem;
+}
+
+.card-title-1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.card-desc-2{
+    font-size: 20px;
+    line-height: 25px;
+    color: #505050;
+}
+
+.edit_card{
+    color: #fa5d41;
+    cursor: pointer;
+}
+
+.btn-delete{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tabs .tab a{
+    font-weight: 600;
+}
+.tabs .tab a .sign {
+    font-size: 20px;
+}
+
+.input-field.mt-2{
+    margin-bottom: 2rem;
+}
+
+.mar-t-3{
+    margin-top: 3rem;
+}
+
+.comment_header{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.row-inf{
+    margin-bottom: 0;
+}
+
+.block_comment{
+    display: flex;
+    flex-direction: column;
+}
+
+.area-comments{
+    padding: 20px 0;
+}
+
+.description_reset{
+    font-size: 21px;
+    font-weight: 400;
+}
